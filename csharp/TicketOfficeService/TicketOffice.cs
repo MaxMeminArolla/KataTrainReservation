@@ -8,7 +8,10 @@ public class TicketOffice
 {
     public Reservation MakeReservation(ReservationRequest request)
     {
-        //TODO: implement this code!
-        throw new NotImplementedException();
+        var seats = new List<Seat>
+        {
+            new Seat("", 1)
+        };
+        return new Reservation("toto", 123456790.ToString("x"), seats);
     }
 }
