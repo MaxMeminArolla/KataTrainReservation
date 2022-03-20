@@ -10,8 +10,8 @@ public class TicketOffice
     {
         var seats = new List<Seat>
         {
-            new Seat("", 1) 
+            new Seat("", request.SeatCount) 
         };
-        return new Reservation("toto", 123456790.ToString("x"), seats);
+        return new Reservation(request.TrainId, 123456790.ToString("x"), seats);
     }
 }
