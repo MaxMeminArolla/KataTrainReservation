@@ -12,7 +12,7 @@ app.MapPost("/reserve", (ReserveRequest request) =>
     var reservationRequest = new ReservationRequest(request.train_id, request.seat_count);
     var reservation = ticketOffice.MakeReservation(reservationRequest);
     
-    return Results.Ok(reservation);
+    return Results.Ok(reservation); 
 });
 
 app.Run();
